@@ -26,10 +26,10 @@ v não pode ser vazio
 int main()
 {
     int p = 2;       // definindo p
-/*
+
     printf("Digite o valor de p: ");
     scanf("%d", &p);
-*/
+
     char palavraFeita[TAMANHO] = "\0";
     char palavra1[2] = "a";
     char palavra[2] = "b";
@@ -54,7 +54,7 @@ int main()
 
    
 
-  /*  setbuf(stdin, NULL);
+    setbuf(stdin, NULL);
     printf("Digite o valor de U: ");
     fgets(u, 30,stdin);
     u[strcspn(u,"\n")] = '\0';
@@ -69,7 +69,7 @@ int main()
     fgets(z, 30,stdin);
     z[strcspn(z,"\n")] = '\0';
     setbuf(stdin, NULL);
-*/
+
  int SomaTotal=0;
  SomaTotal=strlen(u);
  SomaTotal+=strlen(v);
@@ -84,10 +84,10 @@ int main()
     strcpy(aux,v);
     
     int i = 2;      //Definindo i     v^ i
-    /*
+    
     printf("Digite o valor de i : ");
     scanf("%d", &i);
-    */
+    
     for(int k = 0; k < i-1; k++)
     {
         strcat(v,aux);
